@@ -46,8 +46,8 @@ class Motorbike extends Vehicle {
     // Check if the wheels array has 4 elements
     // If not, create 4 new Wheel objects
     // Otherwise, use the provided wheels array
-    if (wheels.length !== 4) {
-      this.wheels = [new Wheel(), new Wheel(), new Wheel(), new Wheel()];
+    if (wheels.length !== 2) {
+      this.wheels = [new Wheel(), new Wheel()];
     } else {
       this.wheels = wheels;
     }
@@ -80,12 +80,6 @@ class Motorbike extends Vehicle {
     );
     console.log(
       `Wheel 2: ${this.wheels[1].getDiameter} inch with a ${this.wheels[1].getTireBrand} tire`
-    );
-    console.log(
-      `Wheel 3: ${this.wheels[2].getDiameter} inch with a ${this.wheels[2].getTireBrand} tire`
-    );
-    console.log(
-      `Wheel 4: ${this.wheels[3].getDiameter} inch with a ${this.wheels[3].getTireBrand} tire`
     );
   }
 }
